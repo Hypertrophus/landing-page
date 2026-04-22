@@ -1,60 +1,84 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f7f7f7;
+    background: linear-gradient(120deg, #f7f7f7 60%, #e0f7ef 100%);
     color: #222;
+    min-height: 100vh;
+    letter-spacing: 0.01em;
 }
 .hero {
     background: linear-gradient(120deg, #4f8cff 0%, #38e38e 100%);
     color: #fff;
     text-align: center;
-    padding: 60px 20px 40px 20px;
+    padding: 70px 20px 50px 20px;
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0 4px 24px 0 rgba(79,140,255,0.08);
 }
 .cta-btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
+    margin-top: 24px;
+    padding: 16px 36px;
     background: #fff;
     color: #38e38e;
-    border-radius: 30px;
+    border-radius: 32px;
     text-decoration: none;
-    font-weight: bold;
-    transition: background 0.2s, color 0.2s;
+    font-weight: 600;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px rgba(56,227,142,0.08);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    border: none;
 }
 .cta-btn:hover {
     background: #38e38e;
     color: #fff;
+    box-shadow: 0 4px 16px rgba(56,227,142,0.18);
 }
 .about {
     background: #fff;
-    padding: 40px 20px;
+    padding: 48px 20px 32px 20px;
     text-align: center;
+    border-radius: 24px;
+    margin: 32px auto 0 auto;
+    max-width: 900px;
+    box-shadow: 0 2px 16px rgba(56,227,142,0.04);
 }
 .coaches {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    margin-top: 30px;
+    margin-top: 36px;
 }
 .coach {
-    background: #f0f0f0;
-    border-radius: 12px;
-    padding: 20px;
-    width: 250px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    background: #f8f8f8;
+    border-radius: 18px;
+    padding: 28px 20px 20px 20px;
+    width: 260px;
+    box-shadow: 0 2px 16px rgba(79,140,255,0.07);
+    transition: transform 0.18s, box-shadow 0.18s;
+}
+.coach:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(79,140,255,0.13);
 }
 .coach img {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+    border: 3px solid #38e38e33;
+    box-shadow: 0 2px 8px rgba(56,227,142,0.08);
 }
 .services {
-    padding: 40px 20px;
+    padding: 48px 20px 32px 20px;
     text-align: center;
+    background: #f7f7f7;
+    border-radius: 24px;
+    margin: 32px auto 0 auto;
+    max-width: 900px;
+    box-shadow: 0 2px 16px rgba(79,140,255,0.04);
 }
 .services ul {
     list-style: none;
@@ -62,56 +86,119 @@ body {
 }
 .services li {
     background: #e0f7ef;
-    margin: 10px auto;
-    padding: 15px;
-    border-radius: 8px;
-    max-width: 400px;
+    margin: 12px auto;
+    padding: 18px;
+    border-radius: 12px;
+    max-width: 420px;
+    font-size: 1.08em;
+    box-shadow: 0 1px 6px rgba(56,227,142,0.06);
 }
 .contact {
     background: #fff;
-    padding: 40px 20px;
+    padding: 48px 20px 32px 20px;
     text-align: center;
+    border-radius: 24px;
+    margin: 32px auto 0 auto;
+    max-width: 900px;
+    box-shadow: 0 2px 16px rgba(79,140,255,0.04);
 }
-form {
+.contact form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    max-width: 400px;
+    gap: 18px;
+    max-width: 420px;
     margin: 0 auto;
+    background: #f8f8f8;
+    border-radius: 16px;
+    padding: 28px 18px 18px 18px;
+    box-shadow: 0 2px 12px rgba(56,227,142,0.04);
 }
-input, textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1em;
+.contact input,
+.contact textarea {
+    padding: 14px;
+    border: 1.5px solid #b2e5d6;
+    border-radius: 8px;
+    font-size: 1.08em;
+    background: #fff;
+    transition: border 0.2s, box-shadow 0.2s;
+    outline: none;
 }
-button[type="submit"] {
-    background: #4f8cff;
+.contact input:focus,
+.contact textarea:focus {
+    border: 1.5px solid #38e38e;
+    box-shadow: 0 0 0 2px #38e38e22;
+}
+.contact textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+.contact button[type="submit"] {
+    background: linear-gradient(90deg, #4f8cff 60%, #38e38e 100%);
     color: #fff;
     border: none;
-    padding: 14px;
-    border-radius: 8px;
-    font-size: 1em;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    box-shadow: 0 2px 8px rgba(79,140,255,0.08);
+    letter-spacing: 0.02em;
 }
-button[type="submit"]:hover {
-    background: #38e38e;
+.contact button[type="submit"]:hover {
+    background: linear-gradient(90deg, #38e38e 60%, #4f8cff 100%);
+    box-shadow: 0 4px 16px rgba(56,227,142,0.18);
+    transform: translateY(-2px) scale(1.03);
+}
+.contact #success-msg {
+    color: #38b16e;
+    font-size: 1.15em;
+    margin-top: 18px;
+    background: #e0f7ef;
+    border-radius: 10px;
+    padding: 18px 10px;
+    box-shadow: 0 1px 6px rgba(56,227,142,0.06);
 }
 footer {
     background: #222;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+    padding: 24px 0 18px 0;
+    margin-top: 48px;
+    font-size: 1.05em;
+    letter-spacing: 0.01em;
+    border-radius: 24px 24px 0 0;
 }
+@media (max-width: 900px) {
+    .about, .services, .contact {
+        max-width: 98vw;
+        margin: 24px 1vw 0 1vw;
+        border-radius: 16px;
+    }
+    .coach {
+        width: 98vw;
+        max-width: 340px;
+    }
+}
+
 @media (max-width: 700px) {
     .coaches {
         flex-direction: column;
         gap: 20px;
     }
     .coach {
-        width: 90%;
+        width: 96vw;
         margin: 0 auto;
+    }
+    .hero {
+        padding: 40px 8px 28px 8px;
+        border-radius: 0 0 18px 18px;
+    }
+    .cta-btn {
+        padding: 14px 18px;
+        font-size: 1em;
+    }
+    .contact form {
+        padding: 18px 4px 10px 4px;
     }
 }
