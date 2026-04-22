@@ -3,57 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>אימון כושר אישי ואונליין - רומן ושגיא</title>
+    <title>Safarov & Sagi | אימון כושר מקצועי</title>
     <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="hero">
-        <h1>שנה את חייך עם אימון כושר אישי ואונליין</h1>
-        <p>עבוד עם המאמנים רומן ושגיא כדי להגיע למטרות שלך!</p>
-        <a href="#contact" class="cta-btn">להתחיל עכשיו</a>
+        <div class="container">
+            <span class="badge">Performance & Results</span>
+            <h1>בניית מסת שריר ושיפור ביצועים</h1>
+            <p>ליווי מקצועי המבוסס על מדע, ניסיון בשטח ותוכניות מותאמות אישית. בלי קיצורי דרך.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="cta-btn">ייעוץ ראשוני חינם</a>
+                <a href="#services" class="secondary-btn">צפייה בשירותים</a>
+            </div>
+        </div>
     </header>
 
-    <section class="about">
-        <h2>הכירו את המאמנים</h2>
-        <div class="coaches">
-            <div class="coach">
-                <img src="assets/coach1.jpg" alt="רומן">
-                <h3>רומן</h3>
-                <p>מאמן כושר מוסמך עם ניסיון של מעל 10 שנים באימון אישי וחיזוק.</p>
-            </div>
-            <div class="coach">
-                <img src="assets/coach2.jpg" alt="שגיא">
-                <h3>שגיא</h3>
-                <p>מומחה לתזונה ומאמן כושר אונליין, עם תשוקה לבריאות הוליסטית.</p>
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">הצוות המקצועי</h2>
+            <div class="coaches">
+                <div class="coach">
+                    <div class="coach-image-wrapper">
+                        <img src="assets/coach1.jpg" alt="רומן ספארוב">
+                    </div>
+                    <h3>רומן ספארוב</h3>
+                    <p class="role">מאמן כושר ומומחה היפרטרופיה</p>
+                    <p class="description">מעל 10 שנות ניסיון בחדר הכושר. מתמחה בבניית תוכניות אימון לשיפור הרכב הגוף ומיקסום פוטנציאל גנטי.</p>
+                </div>
+                <div class="coach">
+                    <div class="coach-image-wrapper">
+                        <img src="assets/coach2.jpg" alt="שגיא">
+                    </div>
+                    <h3>שגיא</h3>
+                    <p class="role">תזונאי ומאמן אונליין</p>
+                    <p class="description">מומחה להתאמת תזונה למטרות כוח וירידה באחוזי שומן. משלב גישה הוליסטית עם דיוק בערכים.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="services">
-        <h2>השירותים שלנו</h2>
-        <ul>
-            <li>אימון אישי 1 על 1 (פרונטלי ואונליין)</li>
-            <li>תוכניות אימון מותאמות אישית</li>
-            <li>הכוונה תזונתית</li>
-            <li>מעקב ותמיכה לאורך כל הדרך</li>
-        </ul>
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">מתודולוגיית עבודה</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon">🏋️</div>
+                    <h4>אימון אישי 1:1</h4>
+                    <p>עבודה פרונטלית בחדר הכושר בדגש על טכניקה מושלמת ומניעת פציעות.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">📊</div>
+                    <h4>ליווי אונליין</h4>
+                    <p>מעקב שבועי, עדכון תוכניות ובקרה על התקדמות דרך אפליקציה ייעודית.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🥗</div>
+                    <h4>ייעוץ תזונה</h4>
+                    <p>תפריטים גמישים שמתאימים לאורח החיים שלך, לא "דיאטות" זמניות.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="contact" id="contact">
-        <h2>צור קשר</h2>
-        <form id="lead-form">
-            <input type="text" name="name" placeholder="שם מלא" required>
-            <input type="email" name="email" placeholder="אימייל" required>
-            <textarea name="message" placeholder="איך נוכל לעזור לך?" required></textarea>
-            <button type="submit" id="submit-btn">שלח הודעה</button>
-        </form>
-        <div id="success-msg" style="display:none; text-align:center; padding: 20px; color: green; font-weight: bold;">
-            ההודעה נשלחה בהצלחה! נחזור אליך בהקדם.
+        <div class="container">
+            <h2 class="section-title">התחלת תהליך</h2>
+            <p class="section-subtitle">השאר פרטים ונחזור אליך לשיחת אפיון קצרה.</p>
+            <form id="lead-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="שם מלא" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="אימייל" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="מה המטרה המרכזית שלך? (מסה/חיטוב/כוח)" required></textarea>
+                </div>
+                <button type="submit" id="submit-btn">שליחת פנייה</button>
+            </form>
+            <div id="success-msg" style="display:none;">
+                <h4>הפרטים התקבלו!</h4>
+                <p>נחזור אליך תוך 24 שעות.</p>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 אימון כושר אישי רומן ושגיא</p>
+        <p>&copy; 2026 Safarov & Sagi | Professional Training</p>
     </footer>
 
     <script>
@@ -80,7 +118,7 @@
                 console.error('Error!', error.message);
                 alert('חלה שגיאה. נסה שוב מאוחר יותר.');
                 btn.disabled = false;
-                btn.innerText = "שלח הודעה";
+                btn.innerText = "שליחת פנייה";
             });
         });
     </script>

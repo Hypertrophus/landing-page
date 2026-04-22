@@ -1,204 +1,208 @@
-body {
-    font-family: 'Segoe UI', 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(120deg, #f7f7f7 60%, #e0f7ef 100%);
-    color: #222;
-    min-height: 100vh;
-    letter-spacing: 0.01em;
-}
-.hero {
-    background: linear-gradient(120deg, #4f8cff 0%, #38e38e 100%);
-    color: #fff;
-    text-align: center;
-    padding: 70px 20px 50px 20px;
-    border-radius: 0 0 32px 32px;
-    box-shadow: 0 4px 24px 0 rgba(79,140,255,0.08);
-}
-.cta-btn {
-    display: inline-block;
-    margin-top: 24px;
-    padding: 16px 36px;
-    background: #fff;
-    color: #38e38e;
-    border-radius: 32px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1em;
-    box-shadow: 0 2px 8px rgba(56,227,142,0.08);
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-    border: none;
-}
-.cta-btn:hover {
-    background: #38e38e;
-    color: #fff;
-    box-shadow: 0 4px 16px rgba(56,227,142,0.18);
-}
-.about {
-    background: #fff;
-    padding: 48px 20px 32px 20px;
-    text-align: center;
-    border-radius: 24px;
-    margin: 32px auto 0 auto;
-    max-width: 900px;
-    box-shadow: 0 2px 16px rgba(56,227,142,0.04);
-}
-.coaches {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 36px;
-}
-.coach {
-    background: #f8f8f8;
-    border-radius: 18px;
-    padding: 28px 20px 20px 20px;
-    width: 260px;
-    box-shadow: 0 2px 16px rgba(79,140,255,0.07);
-    transition: transform 0.18s, box-shadow 0.18s;
-}
-.coach:hover {
-    transform: translateY(-6px) scale(1.03);
-    box-shadow: 0 8px 32px rgba(79,140,255,0.13);
-}
-.coach img {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 18px;
-    border: 3px solid #38e38e33;
-    box-shadow: 0 2px 8px rgba(56,227,142,0.08);
-}
-.services {
-    padding: 48px 20px 32px 20px;
-    text-align: center;
-    background: #f7f7f7;
-    border-radius: 24px;
-    margin: 32px auto 0 auto;
-    max-width: 900px;
-    box-shadow: 0 2px 16px rgba(79,140,255,0.04);
-}
-.services ul {
-    list-style: none;
-    padding: 0;
-}
-.services li {
-    background: #e0f7ef;
-    margin: 12px auto;
-    padding: 18px;
-    border-radius: 12px;
-    max-width: 420px;
-    font-size: 1.08em;
-    box-shadow: 0 1px 6px rgba(56,227,142,0.06);
-}
-.contact {
-    background: #fff;
-    padding: 48px 20px 32px 20px;
-    text-align: center;
-    border-radius: 24px;
-    margin: 32px auto 0 auto;
-    max-width: 900px;
-    box-shadow: 0 2px 16px rgba(79,140,255,0.04);
-}
-.contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    max-width: 420px;
-    margin: 0 auto;
-    background: #f8f8f8;
-    border-radius: 16px;
-    padding: 28px 18px 18px 18px;
-    box-shadow: 0 2px 12px rgba(56,227,142,0.04);
-}
-.contact input,
-.contact textarea {
-    padding: 14px;
-    border: 1.5px solid #b2e5d6;
-    border-radius: 8px;
-    font-size: 1.08em;
-    background: #fff;
-    transition: border 0.2s, box-shadow 0.2s;
-    outline: none;
-}
-.contact input:focus,
-.contact textarea:focus {
-    border: 1.5px solid #38e38e;
-    box-shadow: 0 0 0 2px #38e38e22;
-}
-.contact textarea {
-    min-height: 80px;
-    resize: vertical;
-}
-.contact button[type="submit"] {
-    background: linear-gradient(90deg, #4f8cff 60%, #38e38e 100%);
-    color: #fff;
-    border: none;
-    padding: 16px;
-    border-radius: 10px;
-    font-size: 1.1em;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
-    box-shadow: 0 2px 8px rgba(79,140,255,0.08);
-    letter-spacing: 0.02em;
-}
-.contact button[type="submit"]:hover {
-    background: linear-gradient(90deg, #38e38e 60%, #4f8cff 100%);
-    box-shadow: 0 4px 16px rgba(56,227,142,0.18);
-    transform: translateY(-2px) scale(1.03);
-}
-.contact #success-msg {
-    color: #38b16e;
-    font-size: 1.15em;
-    margin-top: 18px;
-    background: #e0f7ef;
-    border-radius: 10px;
-    padding: 18px 10px;
-    box-shadow: 0 1px 6px rgba(56,227,142,0.06);
-}
-footer {
-    background: #222;
-    color: #fff;
-    text-align: center;
-    padding: 24px 0 18px 0;
-    margin-top: 48px;
-    font-size: 1.05em;
-    letter-spacing: 0.01em;
-    border-radius: 24px 24px 0 0;
-}
-@media (max-width: 900px) {
-    .about, .services, .contact {
-        max-width: 98vw;
-        margin: 24px 1vw 0 1vw;
-        border-radius: 16px;
-    }
-    .coach {
-        width: 98vw;
-        max-width: 340px;
-    }
+:root {
+    --primary: #00ff88; /* Electric Green */
+    --secondary: #0a0a0a; /* Deep Black/Slate */
+    --accent: #1a1a1a;
+    --text-main: #ffffff;
+    --text-muted: #a0a0a0;
 }
 
-@media (max-width: 700px) {
-    .coaches {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .coach {
-        width: 96vw;
-        margin: 0 auto;
-    }
-    .hero {
-        padding: 40px 8px 28px 8px;
-        border-radius: 0 0 18px 18px;
-    }
-    .cta-btn {
-        padding: 14px 18px;
-        font-size: 1em;
-    }
-    .contact form {
-        padding: 18px 4px 10px 4px;
-    }
+body {
+    font-family: 'Assistant', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 120px 0 80px;
+    background: radial-gradient(circle at top right, #1a1a1a 0%, #0a0a0a 100%);
+    text-align: center;
+}
+
+.badge {
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    border: 1px solid var(--primary);
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 20px 0;
+    letter-spacing: -1px;
+}
+
+.hero p {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.cta-btn, .secondary-btn {
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.cta-btn {
+    background: var(--primary);
+    color: var(--secondary);
+}
+
+.cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 255, 136, 0.2);
+}
+
+.secondary-btn {
+    border: 1px solid var(--text-muted);
+    color: var(--text-main);
+}
+
+/* Sections */
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: var(--primary);
+    margin: 15px auto 0;
+}
+
+.about, .services, .contact {
+    padding: 100px 0;
+}
+
+.about { background: var(--accent); }
+
+/* Coaches */
+.coaches {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.coach {
+    text-align: center;
+    background: var(--secondary);
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #333;
+}
+
+.coach-image-wrapper {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--primary);
+}
+
+.coach img { width: 100%; height: 100%; object-fit: cover; }
+
+.coach .role { color: var(--primary); font-weight: 700; margin-bottom: 10px; }
+
+.coach .description { color: var(--text-muted); font-size: 0.95rem; }
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: var(--accent);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.service-card:hover { border-top: 3px solid var(--primary); }
+
+.service-card .icon { font-size: 2.5rem; margin-bottom: 15px; }
+
+/* Contact Form */
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 15px;
+    background: var(--accent);
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+}
+
+.form-group input:focus { border-color: var(--primary); outline: none; }
+
+#submit-btn {
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 18px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#success-msg {
+    background: #00ff8822;
+    border: 1px solid var(--primary);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .coaches, .services-grid { grid-template-columns: 1fr; }
 }
