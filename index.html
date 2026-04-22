@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אימון כושר אישי ואונליין - רומן ושגיא</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>שנה את חייך עם אימון כושר אישי ואונליין</h1>
+        <p>עבוד עם המאמנים רומן ושגיא כדי להגיע למטרות שלך!</p>
+        <a href="#contact" class="cta-btn">להתחיל עכשיו</a>
+    </header>
+
+    <section class="about">
+        <h2>הכירו את המאמנים</h2>
+        <div class="coaches">
+            <div class="coach">
+                <img src="assets/coach1.jpg" alt="רומן">
+                <h3>רומן</h3>
+                <p>מאמן כושר מוסמך עם ניסיון של מעל 10 שנים באימון אישי וחיזוק.</p>
+            </div>
+            <div class="coach">
+                <img src="assets/coach2.jpg" alt="שגיא">
+                <h3>שגיא</h3>
+                <p>מומחה לתזונה ומאמן כושר אונליין, עם תשוקה לבריאות הוליסטית.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>השירותים שלנו</h2>
+        <ul>
+            <li>אימון אישי 1 על 1 (פרונטלי ואונליין)</li>
+            <li>תוכניות אימון מותאמות אישית</li>
+            <li>הכוונה תזונתית</li>
+            <li>מעקב ותמיכה לאורך כל הדרך</li>
+        </ul>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>צור קשר</h2>
+        <form id="lead-form">
+            <input type="text" name="name" placeholder="שם מלא" required>
+            <input type="email" name="email" placeholder="אימייל" required>
+            <textarea name="message" placeholder="איך נוכל לעזור לך?" required></textarea>
+            <button type="submit" id="submit-btn">שלח הודעה</button>
+        </form>
+        <div id="success-msg" style="display:none; text-align:center; padding: 20px; color: green; font-weight: bold;">
+            ההודעה נשלחה בהצלחה! נחזור אליך בהקדם.
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 אימון כושר אישי רומן ושגיא</p>
+    </footer>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzwMYOixR9tWN8weQcHBTWSe13UGJjmaL8XptmNUm8jqfRBZWtdRw_BUc7LX89GS8e7/exec';
+        const form = document.getElementById('lead-form');
+        const btn = document.getElementById('submit-btn');
+        const successMsg = document.getElementById('success-msg');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            btn.disabled = true;
+            btn.innerText = "שולח...";
+
+            fetch(scriptURL, { 
+                method: 'POST', 
+                body: new FormData(form),
+                mode: 'no-cors' 
+            })
+            .then(() => {
+                form.style.display = 'none';
+                successMsg.style.display = 'block';
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                alert('חלה שגיאה. נסה שוב מאוחר יותר.');
+                btn.disabled = false;
+                btn.innerText = "שלח הודעה";
+            });
+        });
+    </script>
+</body>
+</html>
