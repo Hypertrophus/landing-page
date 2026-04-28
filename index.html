@@ -3,98 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safarov & Sagi | אימון כושר מקצועי</title>
+    <title>Safarov & Sagi | אימון כושר ותזונה מקצועי</title>
+    <meta name="description" content="ליווי מקצועי בפיזי ואונליין. אימון כושר ותזונה מבוססי מדע, מותאמים אישית לך. עם רומן ספארוב ושגיא.">
     <link rel="stylesheet" href="assets/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero">
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-brand">SAFAROV <span class="brand-dot">·</span> SAGI</a>
+            <a href="#contact" class="nav-cta">ייעוץ חינם</a>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
         <div class="container">
-            <span class="badge">מעטפת ליווי מלאה</span>
-            <h1>בניית מסת שריר ושיפור ביצועים</h1>
-            <p>ליווי מקצועי המבוסס על מדע, ניסיון בשטח ותוכניות מותאמות אישית. בלי קיצורי דרך.</p>
-            <div class="hero-actions">
-                <a href="#contact" class="cta-btn">ייעוץ ראשוני חינם</a>
-                <a href="#services" class="secondary-btn">צפייה בשירותים</a>
+            <div class="hero-layout">
+                <div class="hero-text">
+                    <span class="hero-label">ליווי פרונטלי ואונליין</span>
+                    <h1 class="hero-title">
+                        <span class="line">אל תתפשר</span>
+                        <span class="line line-accent">על הגוף שלך.</span>
+                    </h1>
+                    <p class="hero-sub">ליווי מקצועי בפיזי ואונליין. מבוסס מדע. מותאם אישית. בלי קיצורי דרך.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn-primary" id="hero-cta-primary">ייעוץ ראשוני חינם</a>
+                        <a href="#coaches" class="btn-ghost" id="hero-cta-secondary">הכר את הצוות ↓</a>
+                    </div>
+                </div>
+                <div class="hero-portraits">
+                    <div class="portrait-card" id="portrait-roman">
+                        <img src="assets/coach1.jpg" alt="רומן ספארוב — מאמן כושר ומומחה היפרטרופיה">
+                        <div class="portrait-label">
+                            <span class="portrait-name">Roman Safarov</span>
+                            <span class="portrait-role">אימון והיפרטרופיה</span>
+                        </div>
+                    </div>
+                    <div class="portrait-card" id="portrait-sagi">
+                        <img src="assets/coach2.jpg" alt="שגיא — תזונאי ומאמן אונליין">
+                        <div class="portrait-label">
+                            <span class="portrait-name">שגיא</span>
+                            <span class="portrait-role">תזונה ואונליין</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
+        <div class="section-glow bottom"></div>
+    </section>
 
-    <section class="about" id="about">
+    <!-- ===== METHOD ===== -->
+    <section class="method" id="method">
         <div class="container">
-            <h2 class="section-title">הצוות המקצועי</h2>
-            <div class="coaches">
-                <div class="coach">
-                    <div class="coach-image-wrapper">
+            <h2 class="section-title">המתודולוגיה</h2>
+            <p class="section-sub">שלושה עקרונות שמבדילים ליווי אמיתי מ"תוכנית כושר"</p>
+            <div class="method-grid">
+                <div class="method-card ri">
+                    <span class="method-number">01</span>
+                    <h3>מדע</h3>
+                    <p>כל תוכנית אימון ותזונה מבוססת על עקרונות היפרטרופיה ופיזיולוגיה מוכחים — לא טרנדים.</p>
+                </div>
+                <div class="method-card ri">
+                    <span class="method-number">02</span>
+                    <h3>מעקב</h3>
+                    <p>ניטור שבועי, עדכוני תוכנית שוטפים, ותיאום מתמיד — כי ה-check-in הוא חלק מהאימון.</p>
+                </div>
+                <div class="method-card ri">
+                    <span class="method-number">03</span>
+                    <h3>אדפטציה</h3>
+                    <p>התוכנית מתאימה לך, לאורח החיים שלך, ולמה שקורה בשטח — לא אתה מתאים לתוכנית.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services" id="services">
+        <div class="section-glow top"></div>
+        <div class="container">
+            <h2 class="section-title">איך עובדים איתנו</h2>
+            <p class="section-sub">שתי מסגרות. אותה רמת דיוק.</p>
+            <div class="services-grid">
+                <div class="service-card ri" id="service-frontal">
+                    <div class="service-tag">פרונטלי</div>
+                    <h3>אימון אישי 1:1</h3>
+                    <p class="service-desc">עבודה פנים-אל-פנים בחדר הכושר. לכאלה שרוצים נוכחות, טכניקה, ותיקון בזמן אמת.</p>
+                    <ul class="service-list">
+                        <li>תוכנית אימון מותאמת אישית</li>
+                        <li>ליווי וטכניקה בזמן אמת</li>
+                        <li>מעקב התקדמות ועדכון שוטף</li>
+                        <li>תיאום תזונה בסיסי</li>
+                    </ul>
+                    <a href="#contact" class="service-cta" id="svc-cta-frontal">בואו נדבר →</a>
+                </div>
+                <div class="service-card ri" id="service-online">
+                    <div class="service-tag">אונליין</div>
+                    <h3>ליווי אונליין</h3>
+                    <p class="service-desc">לכאלה שיודעים לעבוד לבד, אבל רוצים מסגרת, אחריות, ותוכנית שבאמת עובדת.</p>
+                    <ul class="service-list">
+                        <li>תוכנית אימון + תוכנית תזונה</li>
+                        <li>צ'ק-אין שבועי מסודר</li>
+                        <li>גישה לאפליקציה ייעודית</li>
+                        <li>תמיכה שוטפת בצ'אט</li>
+                    </ul>
+                    <a href="#contact" class="service-cta" id="svc-cta-online">בואו נדבר →</a>
+                </div>
+            </div>
+        </div>
+        <div class="section-glow bottom"></div>
+    </section>
+
+    <!-- ===== COACHES ===== -->
+    <section class="coaches" id="coaches">
+        <div class="container">
+            <h2 class="section-title">הצוות</h2>
+            <div class="coaches-grid">
+                <div class="coach-card ri" id="coach-roman">
+                    <div class="coach-photo-wrap">
                         <img src="assets/coach1.jpg" alt="רומן ספארוב">
                     </div>
-                    <h3>רומן ספארוב</h3>
-                    <p class="role">מאמן כושר ומומחה היפרטרופיה</p>
-                    <p class="description">מעל 10 שנות ניסיון בחדר הכושר. מתמחה בבניית תוכניות אימון לשיפור הרכב הגוף ומיקסום פוטנציאל גנטי.</p>
+                    <div class="coach-info">
+                        <h3 class="coach-name">Roman Safarov</h3>
+                        <span class="coach-role">מאמן כושר | מומחה היפרטרופיה</span>
+                        <p class="coach-bio">מעל 10 שנות ניסיון בחדר הכושר. מתמחה בבניית תוכניות אימון לשיפור הרכב הגוף, מיקסום פוטנציאל גנטי, ועבודה מכנית מדויקת. מאמין שכל גוף יכול להגיע רחוק — אם נותנים לו את הכלים הנכונים.</p>
+                    </div>
                 </div>
-                <div class="coach">
-                    <div class="coach-image-wrapper">
+                <div class="coach-card ri" id="coach-sagi">
+                    <div class="coach-photo-wrap">
                         <img src="assets/coach2.jpg" alt="שגיא">
                     </div>
-                    <h3>שגיא</h3>
-                    <p class="role">תזונאי ומאמן אונליין</p>
-                    <p class="description">מומחה להתאמת תזונה למטרות כוח וירידה באחוזי שומן. משלב גישה הוליסטית עם דיוק בערכים.</p>
+                    <div class="coach-info">
+                        <h3 class="coach-name">שגיא</h3>
+                        <span class="coach-role">תזונאי | מאמן אונליין</span>
+                        <p class="coach-bio">מומחה להתאמת תזונה לכוח, להיפרטרופיה, ולירידה באחוזי שומן. משלב גישה הוליסטית עם דיוק בערכים — כי תזונה טובה לא אמורה להרגיש כמו עונש. עבד עם מתאמנים ממגוון רמות ורקעים.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="services" id="services">
+    <!-- ===== RESULTS ===== -->
+    <section class="results" id="results">
+        <div class="section-glow top"></div>
         <div class="container">
-            <h2 class="section-title">מתודולוגיית עבודה</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="icon">🏋️</div>
-                    <h4>אימון אישי 1:1</h4>
-                    <p>עבודה פרונטלית בחדר הכושר בדגש על טכניקה מושלמת ומניעת פציעות.</p>
+            <h2 class="section-title">תוצאות אמיתיות</h2>
+            <p class="section-sub">לא לפני-אחרי מזויפים. רק מספרים.</p>
+            <div class="stats-grid">
+                <!-- UPDATE THESE NUMBERS with real client data -->
+                <div class="stat-card ri" id="stat-muscle">
+                    <span class="stat-number" data-target="12" data-suffix="+">0</span>
+                    <span class="stat-unit">ק״ג שריר</span>
+                    <span class="stat-label">ממוצע בשנה הראשונה של ליווי</span>
                 </div>
-                <div class="service-card">
-                    <div class="icon">📊</div>
-                    <h4>ליווי אונליין</h4>
-                    <p>מעקב שבועי, עדכון תוכניות ובקרה על התקדמות דרך אפליקציה ייעודית.</p>
+                <div class="stat-card ri" id="stat-success">
+                    <span class="stat-number" data-target="87" data-suffix="%">0</span>
+                    <span class="stat-unit">מהמתאמנים</span>
+                    <span class="stat-label">עמדו ביעד שלהם ב-6 חודשים</span>
                 </div>
-                <div class="service-card">
-                    <div class="icon">🥗</div>
-                    <h4>ייעוץ תזונה</h4>
-                    <p>תפריטים גמישים שמתאימים לאורח החיים שלך, לא "דיאטות" זמניות.</p>
+                <div class="stat-card ri" id="stat-exp">
+                    <span class="stat-number" data-target="4" data-suffix="+">0</span>
+                    <span class="stat-unit">שנות ניסיון</span>
+                    <span class="stat-label">ממוצע של לקוחות פעילים</span>
                 </div>
             </div>
+            <p class="stats-note">* המספרים מבוססים על מתאמנים פעילים. הצלחה תלויה בהתמדה ובציות לתוכנית.</p>
         </div>
+        <div class="section-glow bottom"></div>
     </section>
 
+    <!-- ===== CONTACT ===== -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">התחלת תהליך</h2>
-            <p class="section-subtitle">השאר פרטים ונחזור אליך לשיחת אפיון קצרה.</p>
-            <form id="lead-form">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="שם מלא" required>
+            <div class="contact-inner">
+                <div class="contact-text">
+                    <h2 class="contact-title">מוכן להתחיל?</h2>
+                    <p class="contact-sub">השאר פרטים ונחזור אליך תוך 24 שעות לשיחת אפיון קצרה.</p>
+                    <ul class="contact-promises">
+                        <li>ללא התחייבות</li>
+                        <li>ללא מחיר מוסתר</li>
+                        <li>תגובה תוך 24 שעות</li>
+                    </ul>
                 </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="אימייל" required>
+                <div class="contact-form-wrap">
+                    <form id="lead-form">
+                        <div class="form-group">
+                            <input type="text" name="name" id="input-name" placeholder="שם מלא" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="input-email" placeholder="אימייל" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" id="input-phone" placeholder="טלפון (אופציונלי)">
+                        </div>
+                        <div class="form-group">
+                            <select name="message" id="input-goal" required>
+                                <option value="" disabled selected>המטרה שלך</option>
+                                <option value="מסת שריר">מסת שריר</option>
+                                <option value="חיטוב">חיטוב</option>
+                                <option value="כוח">כוח</option>
+                                <option value="שיפור כללי">שיפור כללי</option>
+                            </select>
+                        </div>
+                        <button type="submit" id="submit-btn">שליחת פנייה</button>
+                    </form>
+                    <div id="success-msg" style="display:none;">
+                        <div class="success-icon">✓</div>
+                        <h4>הפרטים התקבלו!</h4>
+                        <p>נחזור אליך תוך 24 שעות.</p>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="מה המטרה המרכזית שלך? (מסה/חיטוב/כוח)" required></textarea>
-                </div>
-                <button type="submit" id="submit-btn">שליחת פנייה</button>
-            </form>
-            <div id="success-msg" style="display:none;">
-                <h4>הפרטים התקבלו!</h4>
-                <p>נחזור אליך תוך 24 שעות.</p>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Safarov & Sagi | Professional Training</p>
+    <!-- ===== FOOTER ===== -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="footer-name">SAFAROV <span class="brand-dot">·</span> SAGI</span>
+                    <span class="footer-tagline">ליווי כושר ותזונה מקצועי</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link" id="footer-instagram" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg>
+                        Instagram
+                    </a>
+                    <a href="https://wa.me/972" target="_blank" rel="noopener" class="social-link" id="footer-whatsapp" aria-label="WhatsApp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Safarov & Sagi. כל הזכויות שמורות.</p>
+            </div>
+        </div>
     </footer>
 
     <script>
+        // ===== NAV SCROLL =====
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 60);
+        }, { passive: true });
+
+        // ===== REVEAL ON SCROLL =====
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const delay = entry.target.dataset.delay || 0;
+                    setTimeout(() => entry.target.classList.add('revealed'), delay);
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.ri').forEach((el, i) => {
+            el.dataset.delay = (i % 3) * 110;
+            revealObserver.observe(el);
+        });
+
+        // ===== COUNT-UP =====
+        const countObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const el = entry.target;
+                const target = parseInt(el.dataset.target);
+                const suffix = el.dataset.suffix || '';
+                const duration = 1400;
+                const startTime = performance.now();
+                const run = (now) => {
+                    const p = Math.min((now - startTime) / duration, 1);
+                    const eased = 1 - Math.pow(1 - p, 3);
+                    el.textContent = Math.round(eased * target) + suffix;
+                    if (p < 1) requestAnimationFrame(run);
+                };
+                requestAnimationFrame(run);
+                countObserver.unobserve(el);
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-number').forEach(el => countObserver.observe(el));
+
+        // ===== FORM =====
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzwMYOixR9tWN8weQcHBTWSe13UGJjmaL8XptmNUm8jqfRBZWtdRw_BUc7LX89GS8e7/exec';
         const form = document.getElementById('lead-form');
         const btn = document.getElementById('submit-btn');
@@ -103,23 +300,18 @@
         form.addEventListener('submit', e => {
             e.preventDefault();
             btn.disabled = true;
-            btn.innerText = "שולח...";
-
-            fetch(scriptURL, { 
-                method: 'POST', 
-                body: new FormData(form),
-                mode: 'no-cors' 
-            })
-            .then(() => {
-                form.style.display = 'none';
-                successMsg.style.display = 'block';
-            })
-            .catch(error => {
-                console.error('Error!', error.message);
-                alert('חלה שגיאה. נסה שוב מאוחר יותר.');
-                btn.disabled = false;
-                btn.innerText = "שליחת פנייה";
-            });
+            btn.textContent = 'שולח...';
+            fetch(scriptURL, { method: 'POST', body: new FormData(form), mode: 'no-cors' })
+                .then(() => {
+                    form.style.display = 'none';
+                    successMsg.style.display = 'flex';
+                })
+                .catch(err => {
+                    console.error(err);
+                    alert('חלה שגיאה. נסה שוב מאוחר יותר.');
+                    btn.disabled = false;
+                    btn.textContent = 'שליחת פנייה';
+                });
         });
     </script>
 </body>
